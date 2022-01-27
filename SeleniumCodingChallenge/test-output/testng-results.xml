@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="HUMAN FUND Application Test Automation Test Suite" duration-ms="16229" started-at="2022-01-27T20:12:08Z" finished-at="2022-01-27T20:12:25Z">
+    <groups>
+    </groups>
+    <test name="uman Fund App Test Cases" duration-ms="16229" started-at="2022-01-27T20:12:08Z" finished-at="2022-01-27T20:12:25Z">
+      <class name="com.tej.tests.SampleFundPageTests">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tej.tests.SampleFundPageTests@4cf777e8]" name="setUp" is-config="true" duration-ms="4772" started-at="2022-01-27T20:12:08Z" finished-at="2022-01-27T20:12:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="submitFormTest()[pri:0, instance:com.tej.tests.SampleFundPageTests@4cf777e8]" name="submitFormTest" duration-ms="1899" started-at="2022-01-27T20:12:13Z" finished-at="2022-01-27T20:12:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- submitFormTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tej.tests.SampleFundPageTests@4cf777e8]" name="tearDown" is-config="true" duration-ms="227" started-at="2022-01-27T20:12:15Z" finished-at="2022-01-27T20:12:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tej.tests.SampleFundPageTests@4cf777e8]" name="setUp" is-config="true" duration-ms="4360" started-at="2022-01-27T20:12:15Z" finished-at="2022-01-27T20:12:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyFirstName()[pri:0, instance:com.tej.tests.SampleFundPageTests@4cf777e8]" name="verifyFirstName" duration-ms="87" started-at="2022-01-27T20:12:20Z" finished-at="2022-01-27T20:12:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyFirstName -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tej.tests.SampleFundPageTests@4cf777e8]" name="tearDown" is-config="true" duration-ms="154" started-at="2022-01-27T20:12:20Z" finished-at="2022-01-27T20:12:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.tej.tests.SampleFundPageTests@4cf777e8]" name="setUp" is-config="true" duration-ms="4555" started-at="2022-01-27T20:12:20Z" finished-at="2022-01-27T20:12:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyPageTitle()[pri:0, instance:com.tej.tests.SampleFundPageTests@4cf777e8]" name="verifyPageTitle" duration-ms="6" started-at="2022-01-27T20:12:25Z" finished-at="2022-01-27T20:12:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyPageTitle -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.tej.tests.SampleFundPageTests@4cf777e8]" name="tearDown" is-config="true" duration-ms="146" started-at="2022-01-27T20:12:25Z" finished-at="2022-01-27T20:12:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.tej.tests.SampleFundPageTests -->
+    </test> <!-- uman Fund App Test Cases -->
+  </suite> <!-- HUMAN FUND Application Test Automation Test Suite -->
+</testng-results>
