@@ -67,7 +67,6 @@ public class SampleFundPage extends TestBase{
 		expiration.sendKeys(prop.getProperty("expiration"));
 		cvv.sendKeys(prop.getProperty("cvv"));
 		submitBtn.click();
-
 	}
 
 }
