@@ -3,6 +3,9 @@ package com.tej.pages;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedCondition;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.tej.base.TestBase;
 
@@ -57,7 +60,11 @@ public class SampleFundPage extends TestBase{
 	public boolean verifyFirstName() {
 		return firstName.isDisplayed();
 	}
-	public void submitForm() {
+	public ThankYouPage submitForm() {
+		
+		WebDriverWait wait=new WebDriverWait(driver,30);
+		wait.until(ExpectedConditions.elementToBeClickable(firstName));
+		
 		gift25.click();
 		firstName.sendKeys(prop.getProperty("firstName"));
 		lastName.sendKeys(prop.getProperty("lastName"));
@@ -67,6 +74,8 @@ public class SampleFundPage extends TestBase{
 		expiration.sendKeys(prop.getProperty("expiration"));
 		cvv.sendKeys(prop.getProperty("cvv"));
 		submitBtn.click();
+		
+		return new ThankYouPage();
 	}
 
 }

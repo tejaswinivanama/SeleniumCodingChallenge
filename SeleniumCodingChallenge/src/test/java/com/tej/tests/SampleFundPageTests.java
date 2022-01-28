@@ -7,10 +7,12 @@ import org.testng.annotations.Test;
 
 import com.tej.base.TestBase;
 import com.tej.pages.SampleFundPage;
+import com.tej.pages.ThankYouPage;
 
 public class SampleFundPageTests extends TestBase{
 
 	public SampleFundPage sampleFundPage;
+	public ThankYouPage thankyouPage;
 	public SampleFundPageTests() {
 		super();
 	}
@@ -19,24 +21,24 @@ public class SampleFundPageTests extends TestBase{
 	public void setUp() {
 		init();
 		sampleFundPage = new SampleFundPage();
+		thankyouPage = new ThankYouPage();
 	}
 	
-	@Test
+	//@Test
 	public void verifyPageTitle() {
 		String pageTitle = sampleFundPage.verifyTitle();
 		Assert.assertEquals(pageTitle, prop.getProperty("title") , prop.getProperty("titleError"));
 	}
 	
-	@Test
+	//@Test
 	public void verifyFirstName() {
 		Assert.assertTrue(sampleFundPage.verifyFirstName()); 
 	}
 	
 	@Test
 	public void submitFormTest() {
-		sampleFundPage.submitForm();
-		//do assert for  thank you page
-		
+		thankyouPage=sampleFundPage.submitForm();	
+		Assert.assertEquals(thankyouPage.readMsg(), "Thank you for your gift!  " , "Transaction was unsuccessful");
 	}
 	
 	@AfterMethod
